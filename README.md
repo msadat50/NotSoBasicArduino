@@ -3,7 +3,7 @@
  
  
 ## Table of Contents
-* [Table of Contents](#TableOf-Contents)
+* [Table of Contents](#TableOfContents)
 * [LED_Fade](#LED_Fade)
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing)
