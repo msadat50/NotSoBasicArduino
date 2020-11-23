@@ -69,6 +69,13 @@ I leanred how to blink a LED.
 
 ```C++
 int counter=0; // this is a variable that make the LED blink 5 times
+int LED = 13; 
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT);
+}
+
 
 void loop() {
   if (counter< 5){
@@ -80,6 +87,7 @@ void loop() {
   counter++; 
   }
 }
+
 
 ```
 The code workers really well. The LED turns on it wait 3 seconds and than turn off.
