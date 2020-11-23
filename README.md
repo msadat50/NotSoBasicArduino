@@ -7,7 +7,7 @@
 * [LED_Fade](#LED_Fade)
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing)
-* [Finite LED Blinker](#Finite LED Blinker)
+* [Finite LED Blinker](#Finite-LED-Blinker)
 ---
 
 ## LED_Fade
