@@ -8,6 +8,7 @@
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing)
 * [Finite LED Blinker](#Finite-LED-Blinker)
+* [Variable LED blink and Button Controlled LED](#Variable-LED-blink-and-Button-Controlled-LED)
 ---
 
 ## LED_Fade
@@ -101,6 +102,47 @@ The code workers really well. The LED turns on it wait 3 seconds and than turn o
 
 ### Reflection
 This wa our 2nd assignment the wiring is the same thing as the first one. I had trouble doing the code, the only new thing was the (if) and the (count) statement i join officer hours and Mr. H helped me out.
+
+## Variable LED blink and Button Controlled LED
+
+### Description & Code
+int ButtonPin = 7;
+int LedPin = 13;                   // this is a variable that make the LED blink 5 times
+int buttonState = 0;
+int delayVar = 1000;  // this variable is used for my delays.
+
+void setup() {
+  pinMode(LedPin, OUTPUT);
+  pinMode(ButtonPin, INPUT);
+  Serial.begin (9600);
+  Serial.println("Hello World");
+}
+
+
+void loop() {
+  buttonState = digitalRead(ButtonPin);
+  Serial.println(buttonState);
+  if (buttonState == HIGH) {
+
+    digitalWrite(LedPin, HIGH);   // Turn on the LED
+    delay(delayVar);            // wait for a second
+    digitalWrite(LedPin, LOW);   // Turn off the LED
+    delay(delayVar);          // wait for a second
+  }
+}
+
+it didn't worked really well. 
+
+### Evidence
+[Variable LED blink and Button Controlled LED on Arduino Create](https://create.arduino.cc/editor/msadat50/820103ac-8c93-4172-900c-dbd65eefa5c6/preview)
+
+### Images
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/LED%20button%20.jpg?raw=true" width="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/LED%20button%20off.jpg?raw=true" width="400">
+
+### Reflection
+This assignment was really confusing and I had a lot of trouble doing it.The button wire wasn't working. I joined the officer hours Mr.H and Mr.Dierolf helped me figure out the problem, but we could tell what is wrong. so I worked on wiring again by my self when I plug the wire next to LED it was working but when I was plugging the wire next to resistor it wasn't working I don't know why. 
+
 
 ## HelloFunctions
 
