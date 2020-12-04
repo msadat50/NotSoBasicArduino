@@ -106,10 +106,11 @@ This wa our 2nd assignment the wiring is the same thing as the first one. I had 
 ## Variable LED blink and Button Controlled LED
 
 ### Description & Code
+
 int ButtonPin = 7;
 int LedPin = 13;                   // this is a variable that make the LED blink 5 times
 int buttonState = 0;
-int delayVar = 1000;  // this variable is used for my delays.
+int delayVar = 1000;      // this variable is used for my delays.
 
 void setup() {
   pinMode(LedPin, OUTPUT);
