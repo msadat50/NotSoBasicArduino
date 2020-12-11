@@ -205,7 +205,7 @@ int getDistance() {
 }
 ```
 
-Talk about how the code works, here my code works good. when something or someone is coming near ultrasonic sensor the servo is turning left, if you're far away than servo turning right.
+here is my code it works good. when something or someone is coming near ultrasonic sensor. the servo is turning left, if you're far away than servo turning right.
 
 ### Evidence
 [Hello Functions on Arudino Create](https://create.arduino.cc/editor/msadat50/c969ac8d-9acf-4491-b26f-4b45bc8ff915/preview)
