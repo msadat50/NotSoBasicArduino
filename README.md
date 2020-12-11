@@ -147,22 +147,75 @@ This assignment was really confusing and I had a lot of trouble doing it.The but
 ## HelloFunctions
 
 ### Description & Code
-Description goes here
-
-Here's how you make code look like code:
-
 ```C++
-Code goes here
+#define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
+#define trigPin 3 //attach pin D3 Arduino to pin Trig of HC-SR04
+#include <Servo.h>
+
+Servo myServo;
+// defines variables
+long duration; // variable for the duration of sound wave travel
+int distance; // variable for the distance measurement
+int cm = 0;
+void setup() {
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
+  pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
+  Serial.begin(9600); // // Serial Communication is starting with 9600 of baudrate speed
+  Serial.println("Ultrasonic Sensor HC-SR04 Test"); // print some text in Serial Monitor
+  Serial.println("with Arduino UNO R3");
+  myServo.attach(9);
+
+}
+void loop() {
+  cm = getDistance();
+  // Displays the distance on the Serial Monitor
+  Serial.print("Distance: ");
+  Serial.print(cm);
+  Serial.println(" cm");
+  if (cm < 20) {
+    myServo.write(90);
+
+
+  }
+  else {
+    myServo.write(0);
+
+  }
+}
+
+
+
+
+
+
+int getDistance() {
+  // Clears the trigPin condition
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigPin HIGH (ACTIVE) for 10 microseconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  // Reads the echoPin, returns the sound wave travel time in microseconds
+  duration = pulseIn(echoPin, HIGH);
+  // Calculating the distance
+  distance = duration * 0.034 / 2;   // Speed of sound wave divided by 2 (go and back)
+  return distance;
+
+}
 ```
-Talk about how the code works, here....
+
+Talk about how the code works, here my code works good. when something or someone is coming near ultrasonic sensor the servo is turning left, if you're far away than servo turning right.
 
 ### Evidence
-link goes here
-
+[Hello Functions on Arudino Create](https://create.arduino.cc/editor/msadat50/c969ac8d-9acf-4491-b26f-4b45bc8ff915/preview)
 ### Images
-draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
+
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/Hello%20funtions.jpg?raw=true" width="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/Hello%20funtions%232.jpg?raw=true" width="400">
 
 ### Reflection
+This is the hello funtion assignment this assignment was good i had trouble coding and wiring it thanks to Mr. H he helped me out.
 
 ## NewPing
 
