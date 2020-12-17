@@ -220,20 +220,71 @@ This is the hello funtion assignment this assignment was good i had trouble codi
 ## NewPing
 
 ### Description & Code
-Description goes here
-
-Here's how you make code look like code:
 
 ```C++
-Code goes here
+Code #define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
+#define trigPin 3 //attach pin D3 Arduino to pin Trig of HC-SR04
+#include <Servo.h>
+#include <NewPing.h>
+#define MAX_DISTANCE 200
+int LedPin = 13;    // this is a variable that make the LED blink 5 times
+int delayVar = 1000;  // this variable is used for my delays.
+
+
+NewPing sonar(trigPin, echoPin, MAX_DISTANCE);
+
+
+Servo myServo;
+// defines variables
+long duration; // variable for the duration of sound wave travel
+int distance; // variable for the distance measurement
+int cm = 0;
+
+void setup() {
+  pinMode(13, OUTPUT);  // Set pin 13 to output
+  Serial.println("Hello World");
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
+  pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
+  Serial.begin(9600); // // Serial Communication is starting with 9600 of baudrate speed
+  Serial.println("Ultrasonic Sensor HC-SR04 Test"); // print some text in Serial Monitor
+  Serial.println("with Arduino UNO R3");
+  myServo.attach(9);
+
+}
+void loop() {
+  cm = sonar.ping_cm();     // run the pig cm
+  if (cm < 20) {
+    digitalWrite(13, HIGH);   // Turn on the LED
+    delay(100);              // Wait for two seconds
+    digitalWrite(13, LOW);    // Turn off the LED
+    delay(100);                    // Wait for two seconds
+    myServo.write(90);
+
+  }
+  else {
+    myServo.write(180);
+  }
+  Serial.print("Distance: ");
+  Serial.print(cm);
+  Serial.println(" cm");
+
+
+
+} 
 ```
-Talk about how the code works, here....
+
+
+The code works good. we create a night light when the room is dark the LED blank and when the room is light LED is off.
 
 ### Evidence
-link goes here
+[New ping  on Arudino Create](https://create.arduino.cc/editor/msadat50/51027bc9-bf28-43cf-aaee-755041d8e175/preview)
 
 ### Images
-draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping.jpg?raw=true" wide="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20on.jpg?raw=true" wide="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20off.jpg?raw=true" wide="400">
+
 
 ### Reflection
-
+This agginment was really confusing ihad trouble wireing and codeing. but Mr. H help me out.
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/Screenshot%202020-12-15%20at%204.29.39%20PM.png?raw=true" wide"400">
