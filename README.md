@@ -274,15 +274,14 @@ void loop() {
 ```
 
 
-The code works good. we create a night light when the room is dark the LED blank and when the room is light LED is off.
-
+The code works good. it's a lot similar to hello function assignment just the LED part is different something is colse to ultrasonic sensor the servo turn off and the LED turn on and when something is far away the servo is on and the LED is off.
 ### Evidence
 [New ping  on Arudino Create](https://create.arduino.cc/editor/msadat50/51027bc9-bf28-43cf-aaee-755041d8e175/preview)
 
 ### Images
-<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping.jpg?raw=true" wide="400">
-<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20on.jpg?raw=true" wide="400">
-<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20off.jpg?raw=true" wide="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping.jpg?raw=true" wide="300">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20on.jpg?raw=true" wide="300">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20off.jpg?raw=true" wide="300">
 
 
 ### Reflection
