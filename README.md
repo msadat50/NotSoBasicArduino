@@ -280,8 +280,8 @@ The code works good. it's a lot similar to hello function assignment just the LE
 
 ### Images
 <img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping.jpg?raw=true" wide="300">
-<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20on.jpg?raw=true" wide="300">
-<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20off.jpg?raw=true" wide="300">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20on.jpg?raw=true" wide="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping%20led%20off.jpg?raw=true" wide="400">
 
 
 ### Reflection
