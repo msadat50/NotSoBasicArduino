@@ -9,6 +9,7 @@
 * [NewPing](#NewPing)
 * [Finite LED Blinker](#Finite-LED-Blinker)
 * [Variable LED blink and Button Controlled LED](#Variable-LED-blink-and-Button-Controlled-LED)
+* [photoresistor](#photoresistor)
 ---
 
 ## LED_Fade
@@ -287,3 +288,49 @@ The code works good. it's a lot similar to hello function assignment just the LE
 ### Reflection
 This agginment was really confusing ihad trouble wireing and codeing. but Mr. H help me out.
 <img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/Screenshot%202020-12-15%20at%204.29.39%20PM.png?raw=true" wide"400">
+
+
+
+## photoresistor
+
+### Description & Code
+```C++
+
+int lightlevel = 0;
+int ledpin = 13;
+int photopin = A0;
+
+void setup() {
+
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+  pinMode(photopin, INPUT);
+
+}
+
+void loop() {
+  lightlevel = analogRead(photopin);
+  Serial.println(lightlevel);
+  if (lightlevel < 20) {
+    digitalWrite(13, HIGH);   // Turn on the LED
+    delay(100);              // Wait for two seconds
+    digitalWrite(13, LOW);    // Turn off the LED
+    delay(100);                    // Wait for two seconds
+  }
+  delay(90);
+
+}
+
+```
+
+
+The code work fine. when a place is dark the LED turn on. when a place is light the LED is off
+### Evidence
+[ photoresistor on Arudino Create](https://create.arduino.cc/editor/msadat50/2fe9905b-ed36-46f8-88ab-9808c1b40c13/preview)
+
+### Images
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/Photoresistor%20led%20on.jpg?raw=true" wide="400">
+<img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/Photoresistor%20led%20off.jpg?raw=true" wide="400">
+
+### Reflection
+This assignment was easier than the two other assignments.I kind off had trouble doing the code thanks to Mr. Dierolf he helped me out. i didn't had any trouble doing the wiring. 
