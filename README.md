@@ -56,7 +56,6 @@ Talk about how the fade works, the fade work really well, the LED turn on and of
 
 ### Evidence
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/msadat50/465a684a-ffc7-4daf-b598-ef2f1500eb8a/preview)
-[This website helped me with the code](https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6)
 
 ### Images
 <img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/LED%20Blinked%20.jpg?raw=true" width="400">
@@ -137,6 +136,7 @@ void loop() {
 it workd fine
 ### Evidence
 [Variable LED blink and Button Controlled LED on Arduino Create](https://create.arduino.cc/editor/msadat50/820103ac-8c93-4172-900c-dbd65eefa5c6/preview)
+
 
 ### Images
 <img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/LED%20button%20off.jpg?raw=true" width="400">
@@ -279,6 +279,8 @@ void loop() {
 The code works good. it's a lot similar to hello function assignment just the LED part is different something is colse to ultrasonic sensor the servo turn off and the LED turn on and when something is far away the servo is on and the LED is off.
 ### Evidence
 [New ping  on Arudino Create](https://create.arduino.cc/editor/msadat50/51027bc9-bf28-43cf-aaee-755041d8e175/preview)
+[This website helped me with the code](https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6)
+
 
 ### Images
 <img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/new%20ping.jpg?raw=true" wide="300">
