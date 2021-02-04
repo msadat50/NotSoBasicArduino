@@ -56,6 +56,7 @@ Talk about how the fade works, the fade work really well, the LED turn on and of
 
 ### Evidence
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/msadat50/465a684a-ffc7-4daf-b598-ef2f1500eb8a/preview)
+[This website helped me with the code](https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6)
 
 ### Images
 <img src="https://github.com/msadat50/NotSoBasicArduino/blob/main/Images/LED%20Blinked%20.jpg?raw=true" width="400">
